@@ -1,0 +1,49 @@
+.date_rate {
+    position: absolute;
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    top: 50%;
+    right: 177px;
+    overflow: hidden;
+    transform: translateY(-50%);
+    // border: 2px solid #fff;
+    &_wrapper {
+        position: relative;
+        .date,
+        .rate {
+            position: absolute;
+        }
+        .date {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 0px 6px #fc7400;
+            right: 95px;
+            top: 82px;
+        }
+        .rate {
+            right: 40px;
+            top: 75px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 0px 6px #fca500;
+        }
+        .CircularProgressbar .CircularProgressbar-trail {
+            stroke: none;
+        }
+        .CircularProgressbar .CircularProgressbar-path {
+            stroke: #ffff;
+            filter: drop-shadow(0px 0px 3px rgba(252, 118, 0, 0.5));
+        }
+    }
+}

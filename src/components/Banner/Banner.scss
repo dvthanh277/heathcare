@@ -4,11 +4,12 @@
         display: flex;
         align-items: center;
         position: relative;
-        height: 316px;
+        height: 312px;
         overflow: hidden;
     }
     &_main {
         width: 43%;
+        position: relative;
         img {
             width: 100%;
             object-fit: cover;
@@ -16,8 +17,8 @@
     }
     .chart_wrapper2 {
         width: 57%;
-        height: 316px;
+        height: 283px;
         margin: 0 auto 0;
-        padding: 15px 40px;
+        padding: 0 173px 0 50px;
     }
 }
