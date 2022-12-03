@@ -1,0 +1,44 @@
+.my_record_button {
+    height: 288px;
+    width: 288px;
+    background: var(--dark-600);
+    border: 24px solid var(--primary-300);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    overflow: hidden;
+    .title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.125px;
+        color: var(--primary-300);
+        z-index: 2;
+        margin-bottom: 10px;
+    }
+    .subTitle {
+        min-width: 160px;
+        height: 24px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #ffffff;
+        z-index: 2;
+        background: var(--primary-400);
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        filter: grayscale(1);
+    }
+}

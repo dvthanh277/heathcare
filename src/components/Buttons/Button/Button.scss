@@ -1,0 +1,16 @@
+.btn_primary {
+    display: block;
+    background: var(--bgButton);
+    border: none;
+    border-radius: 6px;
+    width: 296px;
+    height: 56px;
+    color: var(--light);
+    margin: 0 auto;
+    font-size: 18px;
+    transition: all 0.3s;
+    &:hover {
+        opacity: 0.9;
+        transition: all 0.3s;
+    }
+}

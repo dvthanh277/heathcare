@@ -1,0 +1,21 @@
+.footer {
+    background: var(--dark-500);
+    padding: 53px 0 59px;
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            a {
+                font-size: 11px;
+                color: var(--light);
+                margin-right: 45px;
+                letter-spacing: 0.1px;
+                transition: all 0.3s;
+                &:hover {
+                    color: var(--primary-400);
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+}

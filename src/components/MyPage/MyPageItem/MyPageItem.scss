@@ -1,0 +1,22 @@
+.my_page_item {
+    position: relative;
+    p {
+        width: 120px;
+        background: var(--primary-300);
+        padding: 7px 8px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #fff;
+            &.title {
+                padding-left: 4px;
+            }
+        }
+    }
+}

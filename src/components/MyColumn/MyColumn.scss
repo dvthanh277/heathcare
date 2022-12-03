@@ -1,0 +1,16 @@
+.my_column {
+    padding-bottom: 64px;
+    &_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 32px;
+        padding: 34px 0 56px;
+    }
+    &_items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+}

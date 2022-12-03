@@ -1,0 +1,21 @@
+.header {
+    background: var(--dark-500);
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_logo {
+        a {
+            transition: all 0.3s;
+            &:hover {
+                opacity: 0.9;
+                transition: all 0.3s;
+            }
+        }
+    }
+    &_menu {
+        display: flex;
+        align-items: center;
+    }
+}

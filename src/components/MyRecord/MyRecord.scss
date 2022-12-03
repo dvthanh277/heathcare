@@ -1,0 +1,85 @@
+.my_record {
+    padding-bottom: 64px;
+
+    &_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 48px;
+        padding: 34px 0 56px;
+    }
+    .diary_title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.11px;
+        color: var(--dark-500);
+        height: 32px;
+    }
+    &_diary {
+        .my_diarys {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding-bottom: 28px;
+        }
+    }
+    &_exercise {
+        background: var(--dark-500);
+        height: 264px;
+        padding: 16px;
+        overflow: hidden;
+        margin-bottom: 56px;
+        .exercise_title_wrapper {
+            display: flex;
+            align-items: top;
+            .exercise_title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.15px;
+                color: #ffffff;
+                padding: 0 24px 0 8px;
+            }
+            .exercise_date {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27px;
+                letter-spacing: 0.11px;
+                color: #ffffff;
+            }
+        }
+    }
+    .my_exercise {
+        height: 195px;
+        overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 2px;
+        width: 918px;
+        padding-right: 30px;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            border-radius: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: var(--dark-400);
+            box-shadow: inset 0 0 10px var(--dark-400);
+            border-radius: 20px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: var(--primary-300);
+            border-radius: 20px;
+        }
+    }
+}

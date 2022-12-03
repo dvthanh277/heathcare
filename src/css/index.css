@@ -1,0 +1,20 @@
+:root {
+    --light: #ffffff;
+    --primary-300: #ffcc21;
+    --primary-400: #ff963c;
+    --primary-500: #ea6c00;
+    --secondary-300: #8fe9d0;
+    --dark-600: #2e2e2e;
+    --dark-500: #414141;
+    --dark-400: #777777;
+    --bgGradient: linear-gradient(180deg, #ffcc21 0%, #ff963c 100%);
+    --bgButton: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}

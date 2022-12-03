@@ -1,0 +1,50 @@
+.my_column_item {
+    width: 234px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 12px;
+    .date_time {
+        position: absolute;
+        width: 144px;
+        height: 24px;
+        background: var(--primary-300);
+        left: 0;
+        top: 120px;
+        padding: 3px 8px;
+        span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 16px;
+            color: #fff;
+            &.time {
+                padding-left: 8px;
+            }
+        }
+    }
+    .title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        padding: 8px 0 2px;
+        letter-spacing: 0.075px;
+        color: var(--dark-500);
+    }
+    .tags {
+        display: flex;
+        align-items: center;
+        li {
+            a {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 22px;
+                color: var(--primary-400);
+                letter-spacing: 0.25px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

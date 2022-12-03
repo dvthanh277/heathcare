@@ -1,0 +1,52 @@
+.btn_hexagon {
+    width: 134px;
+    height: 116px;
+    border: none;
+    background: transparent;
+    position: relative;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s;
+
+    &:hover {
+        opacity: 0.9;
+        transition: all 0.3s;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 134px;
+        height: 116px;
+        background: linear-gradient(155.89deg, #ffcc21 8.26%, #ff963c 91.18%);
+        transform: rotate(-90deg);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        border: none;
+        display: block;
+        transition: all 0.3s;
+    }
+    &.active {
+        transition: all 0.3s;
+        &::before {
+            background: linear-gradient(155.89deg, #ff963c 8.26%, #ea6c00 91.18%);
+            transition: all 0.3s;
+        }
+    }
+    &_icon,
+    &_title {
+        z-index: 1;
+        position: relative;
+    }
+    &_title {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+    }
+}

@@ -1,0 +1,39 @@
+.menu {
+    position: relative;
+    &_icon {
+        background: transparent;
+        border: none;
+    }
+    &_content {
+        position: absolute;
+        z-index: 10;
+        width: 280px;
+        right: 0;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(-10px);
+        transition: all 0.5s;
+        visibility: hidden;
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            transition: all 0.5s;
+        }
+        li {
+            background-color: var(--dark-400);
+            transition: all 0.3s;
+            border-top: 1px solid rgba($color: #fff, $alpha: 0.15);
+            border-bottom: 1px solid rgba($color: #2e2e2e, $alpha: 0.25);
+            a {
+                padding: 23px 32px;
+                display: block;
+                color: #fff;
+            }
+            &:hover {
+                background-color: var(--primary-400);
+                transition: all 0.3s;
+            }
+        }
+    }
+}

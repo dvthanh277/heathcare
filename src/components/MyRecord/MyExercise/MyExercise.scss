@@ -1,0 +1,54 @@
+.my_exercise_item {
+    position: relative;
+    width: 416px;
+    margin-left: 10px;
+    padding: 0 0 8px 14px;
+    &::after {
+        content: '';
+        background: var(--dark-400);
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 416px;
+        height: 1px;
+    }
+    &::before {
+        content: '●';
+        font-size: 4px;
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+    .title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.075px;
+
+        color: #ffffff;
+    }
+    .calo {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.075px;
+        color: var(--primary-300);
+    }
+    .time {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: 0.8px;
+        color: var(--primary-300);
+        position: absolute;
+        right: 15px;
+        top: 4px;
+    }
+}
