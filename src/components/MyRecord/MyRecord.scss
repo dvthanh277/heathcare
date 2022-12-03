@@ -8,6 +8,37 @@
         gap: 0 48px;
         padding: 34px 0 56px;
     }
+    &_body {
+        background: var(--dark-500);
+        height: 304px;
+        padding: 16px;
+        overflow: hidden;
+        margin-bottom: 56px;
+        .body_title_wrapper {
+            display: flex;
+            align-items: top;
+            .body_title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.15px;
+                color: #ffffff;
+                padding: 0 24px 0 8px;
+                min-width: 104px;
+            }
+            .body_date {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27px;
+                letter-spacing: 0.11px;
+                color: #ffffff;
+            }
+        }
+    }
     .diary_title {
         font-family: 'Inter';
         font-style: normal;
@@ -80,6 +111,28 @@
         &::-webkit-scrollbar-thumb {
             background: var(--primary-300);
             border-radius: 20px;
+        }
+    }
+    .chart_btns {
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+        margin-top: 7px;
+        button {
+            border: none;
+            background: #fff;
+            border-radius: 11px;
+            color: var(--primary-300);
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.075px;
+            min-width: 56px;
+            &.active {
+                background: var(--primary-300);
+                color: #fff;
+            }
         }
     }
 }

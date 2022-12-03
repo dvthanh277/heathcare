@@ -1,4 +1,5 @@
 import Button from '../Buttons/Button/Button';
+import ChartLine from '../ChartLine/ChartLine';
 import MyDiary from './MyDiary/MyDiary';
 import MyExercise from './MyExercise/MyExercise';
 import './MyRecord.scss'
@@ -32,6 +33,22 @@ function MyRecord() {
                     <MyRecordButton title={'BODY RECORD'} subTitle={'自分のカラダの記録'} image={'./images/MyRecommend-1.png'}></MyRecordButton>
                     <MyRecordButton title={'MY EXERCISE'} subTitle={'自分の運動の記録'} image={'./images/MyRecommend-2.png'}></MyRecordButton>
                     <MyRecordButton title={'MY DIARY'} subTitle={'自分の日記'} image={'./images/MyRecommend-3.png'}></MyRecordButton>
+                </div>
+
+                <div className='my_record_body'>
+                    <div className='body_title_wrapper'>
+                        <h2 className='body_title'>BODY <br />RECORD</h2>
+                        <p className='body_date'>2021.05.21</p>
+                    </div>
+                    <div className='chart_wrapper1'>
+                        <ChartLine></ChartLine>
+                    </div>
+                    <div className='chart_btns'>
+                        <button className='chart_btn'>日</button>
+                        <button className='chart_btn'>週</button>
+                        <button className='chart_btn'>月</button>
+                        <button className='chart_btn active'>年</button>
+                    </div>
                 </div>
 
                 <div className='my_record_exercise'>
